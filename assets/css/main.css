@@ -701,13 +701,13 @@ body {
 }
 
 .intro {
-    position: relative;
+    position: fixed;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    width: 900px;
-    max-width: 75%;
+    /* width: 900px; */
+    /* max-width: 75%; */
     height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -729,10 +729,11 @@ body {
 
 .intro--banner {
     position: relative;
-    height: 475px
+    height: 475px;
+    width: 75%;
 }
 
-.intro--banner::before {
+/* .intro--banner::before {
     content: "";
     position: absolute;
     bottom: 20px;
@@ -750,7 +751,7 @@ body {
     width: 30px;
     height: 4px;
     background-color: #0f33ff
-}
+} */
 
 .intro--banner h1 {
     position: relative;
@@ -1379,7 +1380,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../img/contact-visual.png");
+    /* القرعاء */
+    /* background-image: url("../img/contact-visual.png"); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat
@@ -1980,4 +1982,17 @@ body {
         font-size: 12px;
     }
 
+}
+
+.intro--background {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
